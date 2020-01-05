@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yol"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/giris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/bg_calen"
+        android:text="Çıkış Yap"
+        android:textColor="#9AFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/gidisGelis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/bg_calen"
+        android:text="Gidiş-Dönüş"
+        android:textColor="#9AFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gecmis" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="218dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/spinner"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="148dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_calen"
+        android:gravity="center"
+        android:text="Hedef"
+        android:textColor="#9AFFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bilet"
+        app:layout_constraintStart_toStartOf="@+id/bilet"
+        app:layout_constraintTop_toBottomOf="@+id/bilet" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="217dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/spinner"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/bilet"
+        app:layout_constraintStart_toEndOf="@+id/bilet"
+        app:layout_constraintTop_toTopOf="@+id/bilet" />
+
+    <TextView
+        android:id="@+id/bilet"
+        android:layout_width="148dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
+        android:background="@drawable/bg_calen"
+        android:gravity="center"
+        android:text="Başlangıç"
+        android:textColor="#9AFFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tekYon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_calen"
+        android:text="Gidiş"
+        android:textColor="#9AFFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gecmis" />
+
+    <Button
+        android:id="@+id/gecmis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bg_calen"
+        android:text="Geçmiş"
+        android:textColor="#9AFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="83dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/giris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gecmis"
+        app:srcCompat="@drawable/bus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
